@@ -20,7 +20,7 @@ test ('Dropdown Handling', async ({page}) =>{
     console.log(text1)
 
     const todo1 = await page.locator ('//div[@id="todoZone"]')
-    await todo1.selectOption([{index: 2 }, {value: "true"}])
+    await todo1.selectOption([{index: 3}, {value: "true"}])
     const todozone1 = await todo.locator('option:checked').allTextContents(
     console.log(todozone1)
     )
