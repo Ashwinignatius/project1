@@ -16,12 +16,12 @@ test ('Dropdown Handling', async ({page}) =>{
       await page.goto('https://www.way2automation.com/automationpracticesite2.html')
     const todo = await page.locator('//div[@id="todoZone"]')
     await todo.selectOption({index: 1})
-    const text = await todo.locator('option:checked').textContent()
-    console.log(text)
+    const text1 = await todo.locator('option:checked').textContent()
+    console.log(text1)
 
-    const todo = await page.locator ('//div[@id="todoZone"]')
-    await todo.selectOption([{index: 2 }, {value: "true"}])
-    const todoZone = await todo.locator('option:checked').allTextContents(
-    console.log(heros)
+    const todo1 = await page.locator ('//div[@id="todoZone"]')
+    await todo1.selectOption([{index: 2 }, {value: "true"}])
+    const todozone1 = await todo.locator('option:checked').allTextContents(
+    console.log(todozone1)
     )
 })
